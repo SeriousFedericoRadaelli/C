@@ -15,7 +15,7 @@ int main(){
 
     char voto;
         printf("inserisici il tuo voto: \n");
-        scanf("%c", &voto); //uguale a printf ma al contrario char
+        scanf(" %c", &voto); //uguale a printf ma al contrario char, lo spazio qui dalle virgoletto è obbligatorio 
         printf("il tuo voto è %c \n", voto);
 
     char nome [30];
