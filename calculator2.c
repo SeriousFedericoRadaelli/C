@@ -4,36 +4,31 @@
 
     int max(int num1, int num2,int num3){
         int res;
-           /* if(num1<num2<num3){
-                    res = num3;
-            }else if(num2<num3<num1){
-                    res = num1;
-            }else{
-                res = num2;
-            }*/
-            if(num1<=num3 && num2<=num3){
-                    res = num3;
-            }else if(num2<=num1 && num3<=num1){
-                    res = num1;
-            }else{
-                res = num2;
-            }
-        return res;
+
 
     }
 
 int main(){
-    int num1;
-    int num2;
-    int num3;
-    printf("inserisci il primo valore :");
-    scanf("%d", &num1);
-    printf("inserisci il secondo valore :");
-    scanf("%d", &num2);
-    printf("inserisci il terzo valore :");
-    scanf("%d", &num3);
+    double num1;
+    double num2;
+    char op;
 
-    printf("il valore maggiore è : %d \n",max(num1, num2,num3));
-    
+        printf("enter a number:");
+        scanf("%lf", &num1);
+        printf("enter a other number:");
+        scanf("%lf", &num2);
+        printf("enter an operation:");
+        scanf(" %c", &op);       
+        if(op == '+'){
+            printf("%f", num1 + num2);
+        }else if(op == '-'){
+            printf("%f", num1 - num2);
+        }else if(op == '/'){
+            printf("%f", num1 / num2);
+        }else if(op == '*'){
+            printf("%f", num1 * num2);
+        }
+
+
     return 0;
 }

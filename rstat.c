@@ -5,6 +5,7 @@
     double esp(double num){
             double res = num * num;
             return res; //breakka il ciclo
+            printf("succhiami l'uccello"); //non verrà purtroppo stampato 
     }
 
 int main(){
